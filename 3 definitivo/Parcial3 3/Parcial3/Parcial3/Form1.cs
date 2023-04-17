@@ -28,11 +28,12 @@ namespace Parcial3
         public Form1()
         {
             InitializeComponent();
+            this.BackColor = Color.Orange;
             AddOBJ();
-            scene.instance.Add(new Instance(cubo, new Transform(1, new Vertex(0, 0, 0), new Vertex(0, 0, 0))));
+            scene.instance.Add(new Instance(cubo, new Transform(20, new Vertex(0, 0, 0), new Vertex(0, 0, 0))));
            
         }
-         string path = "C:\\Users\\vlady\\Downloads\\sphere.obj";
+         string path = "C:\\Users\\vlady\\Downloads\\Gun.obj";
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -121,6 +122,7 @@ namespace Parcial3
                 Maximum = 50,
                 Minimum = -50,
                 Value = -13,
+                BackColor = Color.Orange
             };
             
             cr = new TrackBar
@@ -131,6 +133,7 @@ namespace Parcial3
                 LargeChange = 1,
                 Minimum = -180,
                 Value = 0,
+                BackColor = Color.Orange
             };
              cr1 = new TrackBar
             {
@@ -140,6 +143,7 @@ namespace Parcial3
                 LargeChange = 1,
                 Minimum = -180,
                 Value = 0,
+                BackColor = Color.Orange
             };
              cr2 = new TrackBar
             {
@@ -149,6 +153,7 @@ namespace Parcial3
                 LargeChange = 1,
                 Minimum = -180,
                 Value = 0,
+                BackColor = Color.Orange
             };
             
 
